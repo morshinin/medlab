@@ -1,0 +1,481 @@
+/*   
+Author: Mikhail Morshinin
+Author URI: http://79265405446.ru/front-end
+Version: 1.0
+
+*/
+
+/******************************
+        BASE
+******************************/
+
+@font-face {
+font-family: 'Cleanvertising-Light';
+font-style: normal;
+font-weight: normal;
+src: local('Cleanvertising-Light'), url('../fonts/CLEANVEL.woff') format('woff');
+}
+
+body {
+	font-size: 13px;
+}
+
+a {
+	color: #5d87b1;
+}
+
+a:hover {
+	color: #946095;
+}
+
+h2 {
+	font-size: 42px;
+	color: #2481B9;
+	font-family: 'Cleanvertising-Light', sans-serif;
+	padding-bottom: 25px;
+	padding-left: 5px;
+}
+
+h3 {
+	font-size: 34px;
+	color: #935e9c;
+	font-family: 'Cleanvertising-Light', sans-serif;
+}
+
+/******************************
+        HEADER
+******************************/
+
+.top-header {
+	height: 45px;
+	background-color: #43708c;
+	position: relative;
+}
+
+.top-header a {
+	padding:14px 25px;
+	color: #fff;
+
+}
+.top-header a:hover {
+	background-color: #a35ea0;
+	text-decoration: none;
+}
+
+.top-header>div {
+	padding: 0 28px;
+}
+
+.phone-1 {
+	position: relative;
+	bottom: -3px;
+	display: inline-block;
+	padding-left: 30px;
+}
+
+.phone-1 img {
+	margin-top:-5px;
+}
+
+.phone-1 span {
+	font-size:20px;
+	color:#fff;
+	display:inline-block;
+	margin-top:-10px;
+	padding-right:30px;
+}
+
+.cta-btn {
+	display:inline-block;
+	margin-top:-5px;
+}
+
+.header {
+	margin-top: 24px;
+	padding-top: 13px;
+	background: #ffffff;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 32%, #ebeced 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(32%,#ffffff), color-stop(100%,#ebeced));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 32%,#ebeced 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#ffffff 32%,#ebeced 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#ffffff 32%,#ebeced 100%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 32%,#ebeced 100%);
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebeced',GradientType=0 );*/
+}
+
+/******************************
+        SEARCH
+******************************/
+
+.search {
+	position: relative;
+	display: inline-block;
+}
+
+.search input {
+	padding: 6px 0 5px 10px;
+	margin-top: 7px;
+	margin-left: 5px;
+	background-color: #f0f3f4;
+	color: #555;
+}
+
+.search img {
+	position: absolute;
+	top:16px;
+	left: 190px;
+}
+
+
+/******************************
+        MAIN MENU
+******************************/
+
+.main-menu li {
+	padding-left: 60px;
+	height: 36px;
+	line-height: 32px;
+}
+
+.main-menu>li:first-child {
+	background: url(../img/about.png) no-repeat 20px top;
+}
+
+.main-menu>li:first-child:hover {
+	background: url(../img/about1.png) no-repeat 20px top;
+	cursor: pointer;
+}
+
+.main-menu>li:nth-child(2) {
+	background: url(../img/doscors.png) no-repeat 20px top;
+}
+
+.main-menu>li:nth-child(2):hover {
+	background: url(../img/doctors.png) no-repeat 20px top;
+	cursor: pointer;
+}
+
+.main-menu>li:nth-child(3) {
+	background: url(../img/uslugi.png) no-repeat 20px top;
+}
+
+.main-menu>li:nth-child(3):hover {
+	background: url(../img/uslugi1.png) no-repeat 20px top;
+	cursor: pointer;
+}
+
+.main-menu>li:nth-child(4) {
+	background: url(../img/spetial.png) no-repeat 20px top;
+}
+
+.main-menu>li:nth-child(4):hover {
+	background: url(../img/spetial1.png) no-repeat 20px top;
+	cursor: pointer;
+}
+
+.main-menu>li:nth-child(5) {
+	background: url(../img/contacts.png) no-repeat 20px top;
+}
+
+.main-menu>li:nth-child(5):hover {
+	background: url(../img/contacts1.png) no-repeat 20px top;
+	cursor: pointer;
+}
+
+/******************************
+        HEADER CONTACT
+******************************/
+
+.contact {
+	margin-top: 15px;
+	padding-bottom: 30px;
+	color: #5d87b1;
+}
+
+.lang {
+	padding:33px 0 0 0;
+}
+
+/******************************
+        SIDEBAR
+******************************/
+
+.sidebar {
+	padding-top: 30px;
+}
+
+.sidebar > aside > ul > li {
+	list-style-type: none;
+}
+
+aside > ul > li {
+	border-bottom: 1px solid #e0e0e0;
+	margin-left: -20px;
+	padding-left: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+aside > ul > li > ul > li {
+	border-bottom: 1px solid #e0e0e0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: -60px;
+	padding-left: 60px;
+	list-style-type: none;
+	background-image: url(../img/list-circle.png);
+	background-position: 19% 45%;
+	background-size: 4px;
+	background-repeat: no-repeat;
+}
+
+aside > ul > li > ul > li:nth-of-type(4) {
+	border: none;
+}
+aside > ul > li > ul > li:nth-of-type(1) {
+	border-top: 1px solid #e0e0e0;
+	margin-top: 5px;
+}
+
+
+/******************************
+        LEFT SIDEBAR
+******************************/
+
+.left-sidebar {
+	padding:0;
+	padding-right:15px;
+}
+
+.category-diag-title,
+.category-depart-title {
+	margin-top:0;
+	padding-left:30px;
+}
+
+.category-diag-title + ul {
+	margin-bottom: 40px;
+}
+
+.category-diag-title:before {
+	content: url(../img/diagnostic.png);
+	vertical-align: -15%;
+}
+.category-depart-title:before {
+	content: url(../img/departaments.png);
+	vertical-align: -15%;
+}
+
+
+
+/******************************
+        MAIN CONTENT
+******************************/
+
+.main-content {
+	padding:0;
+	padding-right:15px;
+}
+
+.float-left {
+	float:left;
+	padding-right:10px;
+}
+
+/******************************
+        COMMENT FORM
+******************************/
+
+.comments {
+	width:611px;
+	margin-top:20px;
+}
+
+.comments>div:last-of-type {
+	border-bottom: none;
+}
+
+.comments-header {
+	width:611px;
+	height:35px; 
+	background-color:#4780ab; 
+	padding-top:8px;
+}
+
+.comment-count {
+	color:#fff; 
+	margin-left:15px; 
+	margin-right:10px;
+}
+
+.comment-admin-link {
+	color:#a8b7d6;
+}
+
+.comment-vk-logo {
+	display:inline-block; 
+	float:right; 
+	margin-right:10px;
+}
+
+.comment-content-wrap {
+	border-bottom:1px solid #dde1e2; 
+	padding-bottom:10px;
+}
+
+.comment-avatar {
+	display:inline-block; 
+	vertical-align:top; 
+	padding-top:10px; 
+	padding-right:10px;
+}
+
+.comment-content {
+	display:inline-block; 
+	width:526px;
+}
+
+.comment-content-nested-wrap {
+	border-top: 1px solid #dde1e2;
+	margin-top: 10px;
+}
+
+.comment-content-nested {
+	display:inline-block; 
+	width:477px;
+}
+
+.comment-content-title {
+	color:#155060; 
+	font-weight:bold;
+}
+
+.comment-content-nested
+.comment-content-title {
+	color:#155060;
+	font-weight: normal;
+}
+
+.comment-date {
+	color:#9ea09b;
+}
+
+.comment-add-link {
+	color:#155060;
+}
+
+.comment-like {
+	color:#155060; 
+	float:right;
+}
+
+.comment-like-visited {
+	color: #6790a6;
+	float: right;
+	font-weight: bold;
+}
+
+.comment-form {
+	padding:5px; 
+	background-color:#F6F0ED;
+	margin-top:10px;
+}
+
+.comment-form-input {
+	width:100%; 
+	padding-left:5px;
+}
+
+/******************************
+        RIGHT SIDEBAR
+******************************/
+
+.right-sidebar > ul > li {
+	margin-left: -40px;
+	padding-left: 40px;
+}
+
+.right-sidebar {
+	padding-left:25px;
+}
+
+.right-sidebar-category-title {
+	display:block;
+	padding:10px 100px 10px 20px;
+	border: 1px solid #e0e0e0;
+	margin-bottom:10px;
+}
+
+.subscribe-img {
+	display:inline-block;
+	width:20%;
+	vertical-align:top;
+}
+
+.subscribe-img img {
+	float: left;
+}
+
+.subscribe-text {
+	display:inline-block;
+	width:70%;
+	font-weight:bold;
+	color:#B85FA2;
+}
+
+.email-form-input {
+	display:block; 
+	width:100%; 
+	margin-bottom:10px; 
+	padding-left:5px;
+}
+
+.email-form-btn {
+	display:block;
+	width:100%; 
+	background-color:#B85FA2;
+	color:#fff; 
+	border:none; 
+	padding: 10px 20px;
+}
+
+
+/******************************
+        FOOTER
+******************************/
+
+
+footer {
+	margin-top: 50px;
+}
+
+.footer {
+	padding-top: 30px;
+}
+
+.footer-menu {
+	padding-left: 15px;
+	padding-bottom: 20px;
+	display: inline-block;
+}
+
+.footer-menu li {
+	padding: 0 20px 0 10px;
+	background-image: url(../img/list-circle.png);   
+	background-position: 96% 47%;
+	background-size: 4px;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.footer-menu li a {
+	color: #000;
+}
+
+.footer-menu li:last-child {
+	background-image: none;
+}
+
+.bottom-contact {
+	padding-bottom: 20px;
+}
